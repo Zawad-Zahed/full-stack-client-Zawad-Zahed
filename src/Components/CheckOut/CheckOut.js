@@ -13,7 +13,7 @@ const CheckOut = () => {
       .then((res) => res.json())
       .then((data) => setBook(data));
   }, []);
-  const bookDetail = book.find((pd) => pd?._id === _id);
+  const bookDetail = book.find((bd) => bd?._id === _id);
   /* newly added after check out */
   const handleCheckOut = () => {
     const newBookOrder = {

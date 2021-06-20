@@ -27,10 +27,11 @@ const ManageBook = () => {
       <h4>Manage Books</h4>
       <h5>Total Books:{books.length} </h5>
       {books.map((book) => (
-        <div className="container col-md-6">
+        <div className="container d-flex ">
           {" "}
-          <h6>
-            {book.name} Price ${book.price}
+          <h6 className="justify-content-evenly mt-2 pl-2">
+            {book.name} <span className="text-info">{book.author}</span> Price $
+            {book.price}
             <button type="button" className="btn btn-success ml-5">
               <FontAwesomeIcon icon={faEdit} />
             </button>{" "}
